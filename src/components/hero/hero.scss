@@ -1,0 +1,64 @@
+@use "../../assets/styles/variable/global/globalStyle" as *;
+
+.hero {
+  padding: 30px var(--sizeArea);
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .left {
+    width: 50%;
+
+    .leftBtns {
+      margin-top:  50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 330px;
+    }
+  }
+
+  .right {
+    width: 500px;
+    max-width: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 120px 42px rgba($primaryColor, .2);
+
+    img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-position: center 33%;
+      object-fit: cover;
+      transform: scale(1.3);
+    }
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .hero {
+    flex-direction: column-reverse;
+
+    .left {
+      width: 100%;
+      max-width: 100%
+    }
+    .right {
+      max-width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero .left .leftBtns {
+    gap: 40px;
+    width: 100%;
+
+    .primaryBtn  {
+      width: 100%;
+    }
+  }
+}

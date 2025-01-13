@@ -1,0 +1,5 @@
+@use "../../assets/styles/variable/global/globalStyle" as *;
+
+.textInfo {
+  padding: 0 var(--sizeArea)
+}

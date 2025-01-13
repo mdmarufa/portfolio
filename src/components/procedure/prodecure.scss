@@ -1,0 +1,29 @@
+.procedure {
+
+  padding: 0 var(--sizeArea);
+
+  .header {
+    text-align: center;
+
+    .des {
+      margin-inline: auto;
+      text-align: center;
+      width: 777px;
+      max-width: 100%;
+    }
+  }
+
+  .details {
+    width: 100%;
+    padding: 30px;
+    margin-block: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 0px .3px black;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .procedure .details {
+    padding: 15px;
+  }
+}

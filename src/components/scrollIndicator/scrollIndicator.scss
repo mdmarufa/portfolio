@@ -1,0 +1,7 @@
+@use "../../assets/styles/variable/global/globalStyle" as *;
+
+.scrollInd {
+  width: calc(var(--scrollY) * 1%);
+  height: 5px;
+  background-color: $primaryColor;
+}

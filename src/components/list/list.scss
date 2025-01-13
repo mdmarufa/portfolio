@@ -1,0 +1,33 @@
+@use "../../assets/styles/variable/global/globalStyle" as *;
+
+.list {
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  .listType {
+    width: 5px;
+    height: 5px;
+    min-width: 5px;
+    min-height: 5px;
+    background-color: $white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 15px;
+  }
+  .listp {
+  
+    margin-bottom: 5px;
+    margin-left: 10px;
+  
+  
+    .title {
+      font-size: var(--pfs);
+      font-weight: 600;
+    }
+    .des {
+      font-size: var(--pfs);
+    }
+  }
+}

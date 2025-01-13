@@ -1,0 +1,6 @@
+@use './colors' as *;
+
+@mixin DarkMode {
+  background-color: $black;
+  color: $white;
+}

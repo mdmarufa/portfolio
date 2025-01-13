@@ -1,0 +1,26 @@
+@use "./assets/styles/variable/global/globalStyle" as *;
+@use "./appDefault" as *;
+@use "sass:color";
+
+main {
+  width: 100%;
+  height: calc(100% - 73px);
+  scrollbar-width: none;
+  overflow: auto;
+  scroll-behavior: smooth;
+
+  .xM {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
+
+.lightApp {
+  @include app;
+  @include LightMode;
+}
+
+.darkApp {
+  @include app;
+  @include DarkMode;
+}

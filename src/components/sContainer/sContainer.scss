@@ -1,0 +1,15 @@
+.sContainer {
+  padding: 0 var(--sizeArea);
+  margin: 50px 0;
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skills {
+    flex-direction: column;
+  }
+}

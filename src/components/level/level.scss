@@ -1,0 +1,44 @@
+@use "../../assets/styles/variable/global/globalStyle" as *;
+
+.level {
+  width: calc(50% - 30px);
+
+  margin: 10px 30px 10px 0;
+
+  .header {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+
+    img {
+      width: 30px;
+      margin: 0px 10px 10px 0;
+    }
+  }
+  .ind {
+    width: 100%;
+    height: 15px;
+    background-color: rgba(128, 128, 128, 0.219);
+    border-radius: 50px;
+    position: relative;
+
+    
+    .dp {
+      display: block;
+      height: 100%;
+      border-radius: 50px;
+      width: 0px;
+      background-color: #E44D26;
+      transition: width 2000ms linear;
+    }
+    .dpf {
+      width: calc(var(--level) * 1%)
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .level {
+    width: 100%
+  }
+}

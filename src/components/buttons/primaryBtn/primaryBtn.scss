@@ -1,0 +1,48 @@
+@use "../../../assets/styles/variable/global/globalStyle" as *;
+@use "sass:color";
+
+.primaryBtn {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 50px;
+  border: 1px solid $primaryColor;
+  color: $primaryColor;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+
+  @include primaryTransition;
+
+  span {
+    color: $primaryColor !important;
+  }
+
+  &:hover {
+    background-color: rgba($primaryColor, .1);
+  }
+  &:active {
+    background-color: rgba($primaryColor, .2);
+  }
+}
+
+.fill > span {
+  color: white !important;
+}
+
+.fill {
+  border: 1px solid $primaryColor;
+  background-color: $primaryColor;
+  
+  &:hover {
+    background-color: color.adjust($primaryColor, $lightness: 5%);
+    border: 1px solid color.adjust($primaryColor, $lightness: 5%);
+  }
+  &:active {
+    background-color: color.adjust($primaryColor, $lightness: -5%);
+    border: 1px solid color.adjust($primaryColor, $lightness: -5%);
+  }
+}
+
+.shadow {
+  box-shadow: 1px 4px 55px 0px rgba($primaryColor, .7) !important;
+}

@@ -1,0 +1,80 @@
+@use "../../assets/styles/variable/global/globalStyle" as *;
+
+header {
+  display: flex;
+  padding: 10px var(--sizeArea);
+  height: 73px;
+}
+
+.lh {
+  flex-grow: 1;
+}
+
+.links {
+  @include primaryTransition;
+  flex-basis: 400px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: space-between;
+  margin-right: 40px;
+  background-color: $white;
+  user-select: none;
+}
+
+.links.dm {
+  background-color: $black !important;
+}
+
+.buttonContainer {
+  display: grid;
+  place-content: center;
+}
+
+
+
+@media screen and (max-width: 930px) {
+  .links {
+    width: 500px;
+    max-width: 100%;
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    z-index: 100;
+
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.39);
+
+    transform: translateX(-50%)
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    height: 250px;
+    padding: 20px 0;
+    border-radius: 20px;
+    transform: none;
+    left: auto;
+    margin: 0;
+    right: -180px;
+
+    .textLink {
+      font-size: 1.3rem;
+    }
+
+  }
+  .linksActive {
+    right: 0px;
+  }
+}
+// @media screen and (max-width: 374px) {
+//   .links {
+//     padding: 10px 10px;
+//   }
+// }

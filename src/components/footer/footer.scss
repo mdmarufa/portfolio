@@ -1,0 +1,65 @@
+@use "../../assets/styles/variable/global/globalStyle" as *;
+
+footer {
+  width: 100%;
+  color: var(--footerTextColor);
+  padding: 20px var(--sizeArea);
+  background-color: $black;
+  overflow: hidden;
+
+  .xM {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px var(--sizeArea);
+    .left {
+      width: 470px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 30px;
+  
+      .sd a .primaryLogo span {
+        color: $white;
+      }
+    }
+  
+    .right {
+      width: 270px;
+      min-width: 270px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 5px;
+  
+      p {
+        margin: 0;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .xM {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    .xM {
+      .left {
+        flex-direction: column;
+        gap: 0px;
+      }
+  
+      &::after {
+        content: "";
+        height: 50px;
+      }
+    }
+  }
+}

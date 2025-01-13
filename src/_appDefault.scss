@@ -1,0 +1,9 @@
+@use './assets/styles/variable/global/globalStyle' as *;
+
+@mixin app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  @include primaryTransition;
+};
