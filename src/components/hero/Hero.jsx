@@ -20,13 +20,16 @@ const Hero = () => {
         </P>
 
         <div className="leftBtns">
+          <a href="#contact">
           <PrimaryBtn
             title={"&nbsp;&nbsp;Hire me&nbsp;&nbsp;"}
             fill={true}
             shadow={true}
-          />
+          /></a>
+          <a href="#aboutMe">
           <PrimaryBtn title={"About me &nbsp; &#x21af;"} />
-        </div>
+					</a>
+          </div>
       </div>
       <div className="right">
         <img src={myImage} />
