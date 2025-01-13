@@ -4,7 +4,7 @@ import Bootstrap from "../../assets/imgs/svg/bootstrap.svg";
 import Sass from "../../assets/imgs/svg/sass.svg";
 import JS from "../../assets/imgs/svg/javascript.svg";
 import reactJS from "../../assets/imgs/svg/reactjss.svg";
-import nodeJS from "../../assets/imgs/svg/Nodejss.svg";
+import nodeJS from "../../assets/imgs/svg/nodejss.svg";
 import expressJS from "../../assets/imgs/svg/expressjss.svg";
 import mongodb from "../../assets/imgs/svg/Mongodbs.svg";
 import figma from "../../assets/imgs/svg/figma.svg";
