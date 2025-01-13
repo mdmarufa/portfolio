@@ -1,4 +1,4 @@
-import "./primarybtn.scss";
+import "./primaryBtn.scss";
 import LinkText from '../../text/link/LinkText'
 
 const PrimaryBtn = ({title, fill, shadow}) => {
