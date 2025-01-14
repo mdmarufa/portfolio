@@ -52,7 +52,7 @@ const TextInfo = () => {
     <P bold={true} colorize={true}>CONTACT INFO</P>
     <List m={20} title="Email:" des={"md.maruf.ali.7768@gmail.com"} />
     <List m={20} title="Phone:" des={"01747335720 (Call, WhatsApp)"} />
-      {//<List m={20} title="Upwork:" des={"https://github.com/mdMarufAli7768"} />}
+      {/*<List m={20} title="Upwork:" des={"https://github.com/mdMarufAli7768"} />*/}
     <List m={20} title="Location:" des={"Dhaka, Bangladesh"} />
     <List m={20} title="Facebook:" des={"https://www.facebook.com/mdmaruffr"} />
     </div>
