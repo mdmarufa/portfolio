@@ -20,7 +20,7 @@ const Hero = () => {
         </P>
 
         <div className="leftBtns">
-          <a href="#contact">
+          <a href="#contactInfo">
           <PrimaryBtn
             title={"&nbsp;&nbsp;Hire me&nbsp;&nbsp;"}
             fill={true}
